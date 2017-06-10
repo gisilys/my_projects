@@ -1,0 +1,74 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="output_gallery/dist/lightbox.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+<body>
+
+	<a href="index.html"><img src="goback.png" style="width: 50px; position: absolute; float: left;z-index:10;"/></a>
+    <div class="upper_content">
+		<div class="center">MariaDB replikacijos stebėjimo ir testavimo sistema</div>
+	</div>
+    <div class="lower_content" style="min-height: 100%; background-color: rgba(192,192,192,0.9);">
+        <br>
+        <h1 style="text-align:center;">Nuotraukų galerija</h1>
+        <div class="half_block">
+            <a href="img/mariadb_replication1.png" class="lightbox" title="">
+                <img src="img/mariadb_replication1.png" width="500"/></a>
+            </a>
+        </div>
+        <div class="half_block" style="text-align: left; vertical-align: top;">
+            <a href="img/mariadb_replication2.png" class="lightbox" title="">
+                <img src="img/mariadb_replication2.png" width="200" height="150" style="object-fit: cover;"/></a>
+            </a>
+			<a href="img/mariadb_replication3.png" class="lightbox" title="">
+                <img src="img/mariadb_replication3.png" width="200" height="150" style="object-fit: cover;"/></a>
+            </a>
+        </div>
+        <br><br>
+        <h1 style="text-align:center;">Projekto aprašymas</h1>
+        <div class="half_block" style="width: 50%; vertical-align: top; text-align: left;">
+             Web aplikacija yra susieta su dviem virtualiais serveriais, kuriuose įrašyta MariaDB duomenų bazių valdymo sistema. Todėl aplikacija šiuo metu rodo, jog serveriai yra išjungti. Projekto tikslas yra sukurti MariaDB replikaciją, kad duomenų bazės siųstų viena kitai naujus pakitimus (mirroring), jog susivienodintų ir, jei vienas serveris sugestų, būtų galimybė naudoti kitą. Web aplikacija tikrina ar serveriai yra veikiantys ir prisijungia prie duomenų bazės. Jei vienas serveris neveikia, automatiškai prijungia prie kito. Taip pat turi funkciją testuoti replikaciją, t.y. į vieną duomenų bazę pridėti naują eilutę ir tikrinti ar serveris nusiunčia ją į duombazę kitame serveryje.
+        </div>
+        <div class="half_block" style="width: 30%; border-style: solid; min-height: 10%; padding-bottom: 50px; margin-left: 30px;">
+            Projekto tipas: serverių monitoringo aplikacija <br><br>
+            Nuoroda į puslapį: spausti <a href="http://www.gsiworks.puslapiai.lt/mariadb_replication/index.php">Čia</a>
+            <br><br>
+            Nuoroda į projekto ataskaitą (anglų k.): spausti <a href="http://www.gsiworks.puslapiai.lt/my_projects/reports/mariadb_replication.pdf">Čia</a>
+
+        </div>
+		<br><br>
+    </div>
+	<div class="footer">
+		<div class="footer_half_block" style="display: inline-block;float: left;">2017 &copy; Giedrius Šilys - Projektai</div>
+		<div class="footer_half_block" style="float: right; text-align: right; padding-right: 20px;">Kontaktai: Giedrius Šilys, +370 6 395 5012, gsilys@gmail.com</div>
+	</div>
+
+</body>
+</html>
+
+
+<script src="output_gallery/dist/lightbox.js"></script>
+<script>
+    lightbox('.lightbox', {
+        captions: true,
+        captionsSelector: 'self',
+        captionAttribute: 'title',
+        nav: 'auto',
+        navText: [
+            '&lsaquo;',
+            '&rsaquo;'
+        ],
+        close: true,
+        closeText: '&times;',
+        counter: true,
+        keyboard: true,
+        zoom: true,
+        zoomText: '&plus;',
+        docClose: false,
+        swipeClose: true,
+        scroll: false
+    });
+</script>

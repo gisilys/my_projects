@@ -1,0 +1,70 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="output_gallery/dist/lightbox.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+    <div class="upper_content"><div class="center">Biologinių tyrimų įrašų valdymo informacinė sistema</div></div>
+    <div class="lower_content" style="min-height: 100%; background-color: #C0C0C0;">
+        <br>
+        <h1 style="text-align:center;">Nuotraukų galerija</h1>
+        <div class="half_block">
+            <a href="header.jpg" class="lightbox" title="">
+                <img src="header.jpg" width="500"/></a>
+            </a>
+        </div>
+        <div class="half_block" style="text-align: left; vertical-align: top;">
+            <a href="header.jpg" class="lightbox" title="">
+                <img src="header.jpg" height="100"/></a>
+            </a><a href="header.jpg" class="lightbox" title="">
+                <img src="header.jpg" height="100"/></a>
+            </a>
+            <a href="header.jpg" class="lightbox" title="">
+                <img src="header.jpg" height="100"/></a>
+            </a><a href="header.jpg" class="lightbox" title="">
+                <img src="header.jpg" height="100"/></a>
+            </a>
+        </div>
+        <br><br>
+        <h1 style="text-align:center;">Projekto aprašymas</h1>
+        <div class="half_block" style="width: 30%; vertical-align: top; text-align: left;">
+             TextTextTextTextTextTextTextTextText TextTextTextTextTextText TextTextTextTextText<br>
+                TextTextTextTextTextTextText
+        </div>
+       <div class="footer">
+		<div class="footer_half_block" style="display: inline-block;float: left;">2017 &copy; Giedrius Šilys - Projektai</div>
+		<div class="footer_half_block" style="float: right; text-align: right; padding-right: 20px;">Kontaktai: Giedrius Šilys, +370 6 395 5012, gsilys@gmail.com</div>
+	</div>
+
+    </div>
+	<div class="footer"></div>
+
+</body>
+</html>
+
+
+<script src="output_gallery/dist/lightbox.js"></script>
+<script>
+    lightbox('.lightbox', {
+        captions: true,
+        captionsSelector: 'self',
+        captionAttribute: 'title',
+        nav: 'auto',
+        navText: [
+            '&lsaquo;',
+            '&rsaquo;'
+        ],
+        close: true,
+        closeText: '&times;',
+        counter: true,
+        keyboard: true,
+        zoom: true,
+        zoomText: '&plus;',
+        docClose: false,
+        swipeClose: true,
+        scroll: false
+    });
+</script>
